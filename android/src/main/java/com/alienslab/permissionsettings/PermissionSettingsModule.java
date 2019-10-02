@@ -5,10 +5,6 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 
-/**
- * Created by applepc on 26/09/2017.
- */
-
 public class PermissionSettingsModule extends ReactContextBaseJavaModule {
 
     public PermissionSettingsModule(ReactApplicationContext reactContext) {
