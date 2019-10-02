@@ -1,19 +1,25 @@
-# react-native-permission-settings
+# Xmartlabs/react-native-permission-settings
 
-Get to know if user has turned off notifications of your app from app settings. Only for Android.
+This is a package to get to know if user has turned off notifications of your app from app settings. Only for Android, in iOS use `react-native-permissions`
 
 # Installation
 
 Run this command in terminal inside your projects root folder.
 
-`npm install react-native-permission-settings`
+`npm install react-native-permission-settings or yarn add react-native-permission-settings`
 
+## React Native > 0.60
+
+`cd ios & pod install & cd ..`
+
+## React Native < 0.60
 
 <b>Android</b>
 
 Step 1:
 
 In android/settings.gradle file add following lines
+
 ```
 include ':react-native-permission-settings'
 project(':react-native-permission-settings').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-permission-settings/android')
@@ -21,6 +27,7 @@ project(':react-native-permission-settings').projectDir = new File(rootProject.p
 
 Step 2:
 In your android/app/build.gradle file add following line in dependencies.
+
 ```
 dependencies: {
 	...
@@ -56,4 +63,3 @@ NotificationSettings.areNotificationsEnabled((isEnabled: boolean) => {
   console.log(`Notifications are enabled: ${isEnabled}`);
 });
 ```
-
